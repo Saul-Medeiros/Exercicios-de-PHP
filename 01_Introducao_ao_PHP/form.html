@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<title>Escola Virtual</title>
+	<style>
+		body {
+			align-items: center;
+		}
+		div {
+			text-align: center;
+		}
+		table {
+			border: double;
+			margin: auto;
+			width: 600px;
+		}
+		th {
+			text-align: left;
+		}
+		.texto {
+			text-align: right;
+		}
+		.tel {
+			width: 50px;
+		}
+		.telefone {
+			width: 90px;
+		}
+		.info {
+			display: flex;
+			justify-content: space-around;
+			align-items: flex-start;
+		}
+		.botoes {
+			padding-top: 10px;
+		}
+	</style>
+</head>
+<body>
+	<div>
+		<h1>Escola Virtual</h1>
+		<h2>Formulário de Pré-Matrícula</h2>
+	</div>
+	<hr>
+	<form action="" method="post">
+		<table>
+			<tr>
+				<th>Dados Pessoais:</th>
+			</tr>
+			<tr>
+				<td class="texto">Nome do Aluno: </td>
+				<td><input type="text"></td>
+			</tr>
+			<tr>
+				<td class="texto">Nascimento (dd/mm/aaaa): </td>
+				<td>
+					<input type="number" min="1" max="31">/
+					<input type="number" min="1" max="31">/
+					<input type="number" min="1" max="2023">
+				</td>
+			</tr>
+			<tr>
+				<td class="texto">Nome da Mãe: </td>
+				<td><input type="text"></td>
+			</tr>
+			<tr>
+				<td class="texto">Nome do Pai: </td>
+				<td><input type="text"></td>
+			</tr>
+			<tr>
+				<td class="texto">Telefone: </td>
+				<td>
+					DDD (<input class="tel" type="number">) 
+					Tel: <input class="telefone" type="number"> 
+					Ramal: <input class="tel" type="text">
+				</td>
+			</tr>
+			<tr>
+				<td class="texto">E-Mail: </td>
+				<td><input type="email"></td>
+			</tr>
+		</table>
+		<table>
+			<tr>
+				<th>Informações da Matrícula:</th>
+			</tr>
+			<tr class="info">
+				<td>
+					Série:
+					<br>
+					<select name="serie" id="serie">
+						<option value="pré-escolar">pré-escolar</option>
+						<option value="fundamental">fundamental</option>
+						<option value="medio">médio</option>
+						<option value="tecnico">técnico</option>
+						<option value="superior">superior</option>
+					</select>
+				</td>
+				<td>
+					Turno:
+					<br>
+					<input type="radio" name="turno" id="manha"> Manhã
+					<br>
+					<input type="radio" name="turno" id="tarde"> Tarde
+				</td>
+				<td>
+					Atividades Extracurriculares:
+					<br>
+					<input type="checkbox" name="informatica" id="informatica"> Informática
+					<br>
+					<input type="checkbox" name="musica" id="musica"> Música
+					<br>
+					<input type="checkbox" name="balet" id="balet"> Balet
+					<br>
+					<input type="checkbox" name="pintura" id="pintura"> Pintura
+					<br>
+					<input type="checkbox" name="judo" id="judo"> Judô
+					<br>
+					<input type="checkbox" name="futebol" id="futebol"> Futebol
+				</td>
+			</tr>
+		</table>
+		<div class="botoes">
+			<input type="submit" value="Envia Formulário">
+			<input type="reset" value="Limpa Campos">
+		</div>
+	</form>
+</body>
+</html>

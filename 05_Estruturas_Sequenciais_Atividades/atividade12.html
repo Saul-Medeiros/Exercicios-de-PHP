@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<title>Atividade 12</title>
+</head>
+<body>
+	<!-- Efetuar o cálculo do valor de uma prestação em atraso, utilizando a fórmula: PRESTAÇÃO = VALOR + (VALOR * TAXA / 100) * TEMPO. -->
+	<form method="POST" action="atividade12.php">
+		<h1>Cálculo de prestação</h1>
+		<p>Informe o valor da prestação em atraso: R$<input type="number" name="valor" style="width: 80px;"></p>
+		<p>Informe a taxa a ser aplicada: <input type="number" name="taxa" min="0" max="100">%</p>
+		<p>Informe o tempo de atraso: <input type="number" name="tempo" min="0" style="width: 50px;">dias</p>
+		<input type="submit" value="Calcular">
+	</form>
+</body>
+</html>
